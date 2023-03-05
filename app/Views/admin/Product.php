@@ -1,0 +1,116 @@
+<div class="row justify-content-end">
+    <p class="col-1"><a href="<?php echo _WEB_ROOT. '/dang-xuat'?>" class="btn btn-danger">Đăng xuất</a></p>
+</div>
+
+<div class="bg-light bg-gradient rounded p-5 m-2">
+    <div class="table-title m-1">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class="col-sm-6">
+                <h2>Quản lý<b> Sản phẩm</b></h2>
+            </div>
+            <button type="button" class="btn  btn-success" data-bs-toggle="modal" data-bs-target="#addProduct">Thêm sản phẩm</button>
+        </div>
+    </div>
+    <table class="table table-striped table-hover" id="tblProduct">
+        <thead>
+            <tr>
+                <th class="col">Mã sản phẩm</th>
+                <th class="col">Tên sản phẩm</th>
+                <th class="col">Loại sản phẩm</th>
+                <th class="col">Giá</th>
+                <th class="col"></th>                
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            foreach ($data['list'] as $item) {
+                echo '<tr>						
+						<td>' . $item->product_code . '</td>
+						<td>' . $item->product_name . '</td>
+						<td>' . $item->product_category . '</td>
+						<td>' . $item->product_price . '</td>
+						<td>
+                        <button class="btn btn-warning me-md-2" type="button" onclick="Edit('.$item->id.')">Sửa</button>
+                        <button class="btn btn-danger" type="button" onclick="Delete('.$item->id.')">Xoá</button>
+						</td>
+					</tr>';
+            }
+            ?>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="modal fade" id="addProduct" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="<?php echo _WEB_ROOT . '/admin-create' ?>">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm sản phẩm</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label class="form-label">Mã sản phẩm</label>
+                        <input name="code" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tên sản phẩm</label>
+                        <input name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Loại sản phẩm</label>
+                        <input name="cate" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Giá</label>
+                        <input name="price" type="text" class="form-control" required>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Lưu sản phẩm mới</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editProduct">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="<?php echo _WEB_ROOT . '/admin/Product/Edit' ?>">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sửa thông tin sản phẩm</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="edit_id" name="id" value="">
+                    <div class="mb-3">
+                        <label class="form-label">Mã sản phẩm</label>
+                        <input id="edit_code" name="code" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tên sản phẩm</label>
+                        <input id="edit_name" name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Loại sản phẩm</label>
+                        <input id="edit_cate" name="cate" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Giá</label>
+                        <input id="edit_price" name="price" type="text" class="form-control" required>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Lưu sản phẩm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
