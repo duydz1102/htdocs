@@ -21,15 +21,15 @@ function Delete(id) {
     confirmButtonText: "Yes",
   }).then((result) => {
     if (result.value) {
-      fetch(`http://localhost:81/ASM_PHP_VTCA/admin/Product/Delete?id=${id}`).then(()=>{
-        window.location.reload();
+      fetch(`/admin/Product/Delete?id=${id}`).then(()=>{
+        $("#tblProduct").DataTable().ajax.reload();
       });
     }
   });
 }
 
 function Edit(id) {
-  fetch(`http://localhost:81/ASM_PHP_VTCA/admin/Product/GetProductById?id=${id}`).then(res=>res.json()).then(data=>{
+  fetch(`/admin/Product/GetProductById?id=${id}`).then(res=>res.json()).then(data=>{
     $('#editProduct').modal("show");
     console.log(data);
     $("#edit_id").val(data[0]);

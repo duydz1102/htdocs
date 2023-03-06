@@ -1,7 +1,7 @@
 <?php
-    class Dashboard {
+    class Dashboard extends Controller {
         public function Index () {
-            echo "Dashboard by admin";
+            return $this->Views('admin/index');
         }        
     }
 ?>

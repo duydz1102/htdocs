@@ -8,7 +8,8 @@
             <div class="col-sm-6">
                 <h2>Quản lý<b> Sản phẩm</b></h2>
             </div>
-            <button type="button" class="btn  btn-success" data-bs-toggle="modal" data-bs-target="#addProduct">Thêm sản phẩm</button>
+            <button type="button" class="btn  btn-success" data-bs-toggle="modal" data-bs-target="#addProduct">Thêm sản
+                phẩm</button>
         </div>
     </div>
     <table class="table table-striped table-hover" id="tblProduct">
@@ -18,7 +19,7 @@
                 <th class="col">Tên sản phẩm</th>
                 <th class="col">Loại sản phẩm</th>
                 <th class="col">Giá</th>
-                <th class="col"></th>                
+                <th class="col"></th>
             </tr>
         </thead>
         <tbody>
@@ -68,6 +69,11 @@
                         <input name="price" type="text" class="form-control" required>
                     </div>
 
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="img_product">
+                        <label class="input-group-text" for="img_product">Ảnh đại diện</label>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
@@ -104,7 +110,10 @@
                         <label class="form-label">Giá</label>
                         <input id="edit_price" name="price" type="text" class="form-control" required>
                     </div>
-
+                    <div class="mb-3">
+                        <label class="form-label" for="img_product">Ảnh đại diện</label>
+                        <input type="file" class="form-control" id="img_product">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
