@@ -22,19 +22,20 @@ class Auth extends Controller
                     header('Location: ' . _WEB_ROOT . '/admin-product');
                 } else {
                     
-                    return $this->Views("Share/Layout", ['subview' => 'admin/Login', 'error' => true, 'user' => $username, 'pass' => $password]);
+                    return $this->Views("Share/Blank", ['subview' => 'admin/Login', 'error' => true, 'user' => $username, 'pass' => $password]);
                 }
             } catch (Exception $ex) {
                 
-                return $this->Views("Share/Layout", ['subview' => 'admin/Login', 'error' => true, 'user' => $username, 'pass' => $password]);
+                return $this->Views("Share/Blank", ['subview' => 'admin/Login', 'error' => true, 'user' => $username, 'pass' => $password]);
             }
         }
 
-        return $this->Views("Share/Layout", ['subview' => 'admin/Login']);
+        return $this->Views("Share/Blank", ['subview' => 'admin/Login']);
     }
 
     public function Logout()
     {
+        session_destroy();
         header('Location: ' . _WEB_ROOT . '/trang-chu');
     }
 }

@@ -12,26 +12,25 @@ class Auth extends Controller
     {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $username = $_POST["UserName"];
-            $password = $_POST["password"];            
+            $password = $_POST["password"].'abcd';            
 
             try {
                 $data = $this->modelUser->GetUser(trim($username), trim(md5($password)));                    
                 if (isset($data[0])) {
-                    $_SESSION["username"] = $username;
-                    $_SESSION["password"] = $password;
+                    $_SESSION["username"] = $username;                   
 
                     header('Location: ' . _WEB_ROOT . '/trang-chu');
                 } else {
                     session_destroy();                    
-                    return $this->Views("Share/Layout", ['subview' => 'Auth/Login', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
+                    return $this->Views("Share/Blank", ['subview' => 'Auth/Login', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
                 }
             } catch (Exception $ex) {
                 session_destroy();
-                return $this->Views("Share/Layout", ['subview' => 'Auth/Login', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
+                return $this->Views("Share/Blank", ['subview' => 'Auth/Login', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
             }
         }
 
-        return $this->Views("Share/Layout", ['subview' => 'Auth/Login']);
+        return $this->Views("Share/Blank", ['subview' => 'Auth/Login']);
     }
 
     public function LogOut()
@@ -45,7 +44,7 @@ class Auth extends Controller
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $email = $_POST["Email"];
             $username = $_POST["UserName"];
-            $password = $_POST["password"];
+            $password = $_POST["password"].'abcd';
 
             $_SESSION["username"] = $username;
             $_SESSION["password"] = $password;
@@ -54,7 +53,7 @@ class Auth extends Controller
 
             header('Location: ' . _WEB_ROOT . '/trang-chu');
         } else {
-            return $this->Views("Share/Layout", ['subview' => 'Auth/SignIn']);
+            return $this->Views("Share/Blank", ['subview' => 'Auth/SignIn']);
         }
     }
 
