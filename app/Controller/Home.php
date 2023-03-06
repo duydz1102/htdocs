@@ -6,7 +6,7 @@ class Home extends Controller
 
     public function index()
     {
-        return $this->Views("Share/Layout", ['subview'=> 'Product/index']);
+        return $this->Views("Product/index");
     }
     
     public function detail()
