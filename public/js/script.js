@@ -21,8 +21,8 @@ function Delete(id) {
     confirmButtonText: "Yes",
   }).then((result) => {
     if (result.value) {
-      fetch(`/admin/Product/Delete?id=${id}`).then(()=>{
-        $("#tblProduct").DataTable().ajax.reload();
+      fetch(`/admin/Product/Delete?id=${id}`).then((res)=>{
+        window.location.reload();
       });
     }
   });

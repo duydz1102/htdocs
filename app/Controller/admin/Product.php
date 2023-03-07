@@ -17,19 +17,22 @@ class Product extends Controller {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $code = $_POST["code"];
             $name = $_POST["name"];
+            $img_path = '\\public\\img\\product\\'.(new DateTime())->getTimestamp().'.png';
+            $target = _DIR_ROOT.$img_path;
             $cate = $_POST["cate"];
-            $price = $_POST["price"];
-
+            $price = $_POST["price"];                        
+                        
+            move_uploaded_file($_FILES["img_product"]["tmp_name"], $target);
             try{
-            $this->modelProduct->Create($code, $name, $price, $cate);
+            $this->modelProduct->Create($code, $name, $img_path, $price, $cate);
             header('Location: ' . _WEB_ROOT . '/admin-product');
             }
             catch (Exception $ex) {
                 echo $ex;
-                $this->Index();
+                $this->Index(); 
             }   
         }
-
+        $this->Index();
     }
 
     public function Edit() {
@@ -49,6 +52,7 @@ class Product extends Controller {
                 header('Location: ' . _WEB_ROOT . '/admin-product');
             }
         }
+        $this->Index();
     }
 
     public function Delete() {
@@ -58,7 +62,10 @@ class Product extends Controller {
         }
         catch (Exception $ex) {
             echo $ex;
-        }  
+        }
+        finally {
+            $this->GetProductById2($id);
+        }
     }
 
     public function GetAllProduct() {
@@ -71,6 +78,12 @@ class Product extends Controller {
     public function GetProductById() {
         $id = $_GET['id'];
         $result = $this->modelProduct->GetById($id);
+        echo json_encode($result, \JSON_UNESCAPED_UNICODE);
+        die;
+    }
+
+    private function GetProductById2($id) {
+        $result = $this->modelProduct->GetById2($id);
         echo json_encode($result, \JSON_UNESCAPED_UNICODE);
         die;
     }

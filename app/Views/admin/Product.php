@@ -13,6 +13,7 @@
             <tr>
                 <th class="col">Mã sản phẩm</th>
                 <th class="col">Tên sản phẩm</th>
+                <th class="col">Ảnh đại diện</th>
                 <th class="col">Loại sản phẩm</th>
                 <th class="col">Giá</th>
                 <th class="col"></th>
@@ -24,6 +25,7 @@
                 echo '<tr>						
 						<td>' . $item->product_code . '</td>
 						<td>' . $item->product_name . '</td>
+						<td> <img src="'. $item->img_path.'" style="width: 35px; height:35px;"/></td>
 						<td>' . $item->product_category . '</td>
 						<td>' . $item->product_price . '</td>
 						<td>
@@ -41,7 +43,7 @@
 <div class="modal fade" id="addProduct" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" action="<?php echo _WEB_ROOT . '/admin-create' ?>">
+            <form method="post" enctype="multipart/form-data" action="<?php echo _WEB_ROOT . '/admin-create' ?>">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm sản phẩm</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -66,8 +68,8 @@
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="img_product">
                         <label class="input-group-text" for="img_product">Ảnh đại diện</label>
+                        <input type="file" class="form-control" id="img_product" name="img_product">
                     </div>
 
                 </div>
@@ -83,7 +85,7 @@
 <div class="modal fade" id="editProduct">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" action="<?php echo _WEB_ROOT . '/admin/Product/Edit' ?>">
+            <form method="post" enctype="multipart/form-data" action="<?php echo _WEB_ROOT . '/admin/Product/Edit' ?>">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Sửa thông tin sản phẩm</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -108,7 +110,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="img_product">Ảnh đại diện</label>
-                        <input type="file" class="form-control" id="img_product">
+                        <input type="file" class="form-control" name="img_product" id="img_product">
                     </div>
                 </div>
                 <div class="modal-footer">
