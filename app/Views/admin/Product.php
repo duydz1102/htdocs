@@ -112,6 +112,7 @@
                         <label class="form-label" for="img_product">Ảnh đại diện</label>
                         <input type="file" class="form-control" name="img_product" id="img_product">
                     </div>
+                        <input type="hidden" id="img_path" name="img_path">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>

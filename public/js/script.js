@@ -35,8 +35,9 @@ function Edit(id) {
     $("#edit_id").val(data[0]);
     $("#edit_code").val(data[1]);
     $("#edit_name").val(data[2]);
-    $("#edit_cate").val(data[3]);
-    $("#edit_price").val(data[4]);
+    $("#img_path").val(data[3]);
+    $("#edit_cate").val(data[4]);
+    $("#edit_price").val(data[5]);
     
   })
 }

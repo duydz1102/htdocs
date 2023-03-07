@@ -41,7 +41,12 @@ class Product extends Controller {
             $name = $_POST["name"];
             $cate = $_POST["cate"];
             $price = $_POST["price"];
+
+            if(file_exists(($_FILES["img_product"]["tmp_name"]))){
             $id = $_POST['id'];
+            $img_path = _DIR_ROOT.$_POST["img_path"];            
+            move_uploaded_file($_FILES["img_product"]["tmp_name"], $img_path);
+            }
             try{
             $this->modelProduct->Edit($code, $name, $price, $cate, $id);
             }
@@ -88,4 +93,3 @@ class Product extends Controller {
         die;
     }
 }
-?>
