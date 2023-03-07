@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/public/lib/bootstrap/bootstrap.min.css" />
     <script src="/public/lib/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="/public/lib/jquery-3.6.3.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -22,9 +23,7 @@
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <button class="navbar-toggler f_s_2" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler f_s_2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
 
@@ -228,16 +227,14 @@
 
         <div class="container container-content">
             <div class="row tm-mb-90 tm-gallery justify-content-center">
-                <div
-                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4 justify-content-around">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4 justify-content-around">
                     <div class="col car_custom">
                         <h2 class="title-card h3 my-3 text-center color-orange">
                             No Junk, No Jerks
                         </h2>
                         <div class="card-healll">
                             <figure class="tm-video-item bg-main">
-                                <img src="/public/img/img_user/iphone-head.jpeg" alt="Image" class="img-fluid"
-                                    width="200px" height="200px" />
+                                <img src="/public/img/img_user/iphone-head.jpeg" alt="Image" class="img-fluid" width="200px" height="200px" />
                                 <figcaption class="d-flex align-items-center justify-content-center">
                                     <a href="photo-detail.html">View more</a>
                                 </figcaption>
@@ -259,8 +256,7 @@
                         </h2>
                         <div class="card-healll">
                             <figure class="tm-video-item bgg-green-100">
-                                <img src="/public/img/img_user/category_phones_600x600.png" alt="Image"
-                                    class="img-fluid" width="200px" height="200px" />
+                                <img src="/public/img/img_user/category_phones_600x600.png" alt="Image" class="img-fluid" width="200px" height="200px" />
                                 <figcaption class="d-flex align-items-center justify-content-center">
                                     <a href="photo-detail.html">View more</a>
                                 </figcaption>
@@ -282,8 +278,7 @@
                         </h2>
                         <div class="card-healll">
                             <figure class="tm-video-item bgg-pink-100">
-                                <img src="/public/img/img_user/macbook-head.jpeg" alt="Image" class="img-fluid"
-                                    width="200px" height="200px" />
+                                <img src="/public/img/img_user/macbook-head.jpeg" alt="Image" class="img-fluid" width="200px" height="200px" />
                                 <figcaption class="d-flex align-items-center justify-content-center">
                                     <a href="photo-detail.html">View more</a>
                                 </figcaption>
@@ -328,8 +323,7 @@
 
                 <section id="section_billboard" class="mb-5">
                     <div class="sell_search_block card mb-4 p-3 rounded text-center">
-                        <div
-                            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 justify-content-center align-items-center">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 justify-content-center align-items-center">
                             <div class="col">
                                 <h3 class="d-block my-2 text-light">
                                     Get more green, get paid fast
@@ -343,13 +337,11 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 justify-content-center gy-4">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 justify-content-center gy-4">
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_computers_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_computers_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Computer</a>
                             </div>
@@ -357,8 +349,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_hometech_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_hometech_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Watches</a>
                             </div>
@@ -366,8 +357,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_wearables_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_wearables_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">iPads + Tablets</a>
                             </div>
@@ -375,8 +365,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_gaming_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_gaming_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Video Games</a>
                             </div>
@@ -384,8 +373,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_tablets_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_tablets_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Home Tech</a>
                             </div>
@@ -393,8 +381,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_cameras_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_cameras_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Cameras + Lenses</a>
                             </div>
@@ -402,8 +389,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_audio_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_audio_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">AirPords + Audio</a>
                             </div>
@@ -411,8 +397,7 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_drones_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_drones_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Drones</a>
                             </div>
@@ -420,19 +405,16 @@
                         <div class="col-1" id="w-50">
                             <div class="card card_home_category text-center hover-banner-1">
                                 <div class="med_image bgg-orange-100">
-                                    <img src="https://static.swappa.com/static/images/categories/retro/category_fitness_600x600.png"
-                                        class="card-img-top" alt="...">
+                                    <img src="https://static.swappa.com/static/images/categories/retro/category_fitness_600x600.png" class="card-img-top" alt="...">
                                 </div>
                                 <a class="card-title cl-main ">Fitness + Cycling</a>
                             </div>
                         </div>
                     </div>
                     <div class="mt-3 sell_search card mb-4 p-3 rounded text-center">
-                        <div
-                            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 justify-content-center align-items-center">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 justify-content-center align-items-center">
                             <div class="col">
-                                <img class="img-fluid" src="img/trade_in_banner_icons_white.png" alt=""
-                                    style="max-height: 65px;">
+                                <img class="img-fluid" src="img/trade_in_banner_icons_white.png" alt="" style="max-height: 65px;">
                                 </a>
                             </div>
                             <div class="col">
@@ -538,12 +520,9 @@
                         </div>
                     </div>
                     <div class=" tradein_search_block2 mt-3  card mb-4 p-3 rounded text-center">
-                        <div
-                            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 justify-content-center align-items-center">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 justify-content-center align-items-center">
                             <div class="col">
-                                <img width="100%"
-                                    src="https://static.swappa.com/static/images/banners/local_skyline_purple.png"
-                                    alt="" />
+                                <img width="100%" src="https://static.swappa.com/static/images/banners/local_skyline_purple.png" alt="" />
                                 </a>
                             </div>
                             <div class="col">
@@ -574,15 +553,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/Apple iphone 11.png" alt="Image"
-                                            class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/Apple iphone 11.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPhone 11</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -597,15 +573,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/37/11/37119c3fa35083b0cd5b952f82307ea3.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/37/11/37119c3fa35083b0cd5b952f82307ea3.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPhone 12 Pro Max</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -620,15 +593,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/c5/19/c519b238b3cf3151f2ade3422d46703f.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/c5/19/c519b238b3cf3151f2ade3422d46703f.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPhone SE 2nd Gen 2020</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -644,15 +614,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/cbd819566cb0be988082a31193e10779.png "
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/cbd819566cb0be988082a31193e10779.png " alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPhone 12</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -667,15 +634,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/42f7e00af104deaeb08b9e21d2995454.png "
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/42f7e00af104deaeb08b9e21d2995454.png " alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPhone 11 Pro</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -712,15 +676,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/6cd6e32c4e5b417273b94e2dc9c01079.png" alt="Image"
-                                            class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/6cd6e32c4e5b417273b94e2dc9c01079.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">MacBook Air 2020 - 13"</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -735,15 +696,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/237934661f4b9ee4c6213ed2a224715c.png" alt="Image"
-                                            class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/237934661f4b9ee4c6213ed2a224715c.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">MacBook Pro 2020 - 13"</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -758,15 +716,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/ecb8b2dce1fed1c2cc735f1ccd27f0b6.png" alt="Image"
-                                            class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/ecb8b2dce1fed1c2cc735f1ccd27f0b6.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">MacBook Pro 2019 - 16"</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -781,15 +736,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/1c76238d6c9dde348f354d13ce8cc06b.png" alt="Image"
-                                            class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/1c76238d6c9dde348f354d13ce8cc06b.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Microsoft Surface Pro 7</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -804,15 +756,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/a870abeee5293d605f5a3244bdc465a5.png "
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/a870abeee5293d605f5a3244bdc465a5.png " alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">MacBook Pro 2021 - 16"</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -827,15 +776,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="/public/img/img_user/289df0bb882292430ff64e9d72369523.png" alt="Image"
-                                            class="img-fluid max-h" />
+                                        <img src="/public/img/img_user/289df0bb882292430ff64e9d72369523.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">MacBook Pro 2015 (Retina) - 15"</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -872,15 +818,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/eb/58/eb5883d8dbc048f9313cec3c75403d90.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/eb/58/eb5883d8dbc048f9313cec3c75403d90.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPad Air 2</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -895,15 +838,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/e4/a4/e4a42f2a249021fbbbce71eed0139c1e.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/e4/a4/e4a42f2a249021fbbbce71eed0139c1e.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPad Air</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -918,15 +858,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/45/8c/458c03042a6031bbd8fd409fc0425815.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/45/8c/458c03042a6031bbd8fd409fc0425815.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPad Pro 12.9" 5th Gen 2021</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -941,15 +878,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/14/97/14976273fffd65831fe1fdd09244d392.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/14/97/14976273fffd65831fe1fdd09244d392.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPad Pro 9.7"</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -964,15 +898,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/17/7b/177b37f00f1461b4479f01b2f69f6e0c.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/17/7b/177b37f00f1461b4479f01b2f69f6e0c.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPad 7th Gen</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -987,15 +918,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/bd/78/bd78193fbdb635774f239f1c1616671f.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/bd/78/bd78193fbdb635774f239f1c1616671f.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple iPad Pro 11" 3rd Gen 2021</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1032,15 +960,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/ae/5c/ae5c04261fd20e88b478a97a59e64f33.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/ae/5c/ae5c04261fd20e88b478a97a59e64f33.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple Watch Series 7 45mm</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1055,15 +980,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/8b/04/8b04c4c013aaa5612c490eca235750d8.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/8b/04/8b04c4c013aaa5612c490eca235750d8.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple Watch Series 6 44mm</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1078,16 +1000,13 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/3b/eb/3beb5390809ba3aca6d638a088752ae5.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/3b/eb/3beb5390809ba3aca6d638a088752ae5.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Samsung Galaxy Watch4
                                     </h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1102,15 +1021,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/5a/22/5a22af83dfb639d8e9b27cff744432f8.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/5a/22/5a22af83dfb639d8e9b27cff744432f8.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple Watch Series 7 41mm</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1125,15 +1041,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/79/40/79405440919cddae6e390ff0676c2fc6.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/79/40/79405440919cddae6e390ff0676c2fc6.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple Watch Series 8 45mm</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1148,15 +1061,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/be/fd/befdd494c173dd26714eae7a5d7eb1c5.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/be/fd/befdd494c173dd26714eae7a5d7eb1c5.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Apple Watch Series 5 40mm</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1193,16 +1103,13 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/26/56/2656a781f9848ba15db230122596df45.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/26/56/2656a781f9848ba15db230122596df45.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">PlayStation 5 Standard Edition
                                     </h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1217,15 +1124,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/9d/d0/9dd0a62f8e05fe338c41fbb9cdf48c12.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/9d/d0/9dd0a62f8e05fe338c41fbb9cdf48c12.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Nintendo Switch</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1240,15 +1144,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/8a/f9/8af9d5a13dfb17dd851eef4d65a9fd40.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/8a/f9/8af9d5a13dfb17dd851eef4d65a9fd40.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Xbox Series X (2020)</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1263,15 +1164,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/a9/e9/a9e965686eb76639c880c6724728d334.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/a9/e9/a9e965686eb76639c880c6724728d334.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Meta Quest 2</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1286,16 +1184,13 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/5f/46/5f467a0d5709e165220bcbff86c6f506.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/5f/46/5f467a0d5709e165220bcbff86c6f506.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">Xbox Series S (2020)
                                     </h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1310,15 +1205,12 @@
                             <div class="card card_product hover-banner-1">
                                 <div class="card-body text-center">
                                     <a href="#" class="stretched-link image">
-                                        <img src="https://static.swappa.com/images/cache/87/fe/87fe4e7883e7eee2adbfc573da7f8bfc.png"
-                                            alt="Image" class="img-fluid max-h" />
+                                        <img src="https://static.swappa.com/images/cache/87/fe/87fe4e7883e7eee2adbfc573da7f8bfc.png" alt="Image" class="img-fluid max-h" />
                                     </a>
                                     <h6 class="card-title title">PlayStation 5 Digital Edition</h6>
                                     <div class="reviews">
                                         <div class="stars_value d-block text-center text-nowrap">
-                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i
-                                                class='last-star cl-star bx bxs-star'></i>
+                                            <i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='cl-star bx bxs-star'></i><i class='last-star cl-star bx bxs-star'></i>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -1659,8 +1551,7 @@
                 </div>
                 <div class="social-link last_main_f">
                     <div class="last-logo">
-                        <a href="#"><img src="https://static.swappa.com/static/images/logos/swappa_wordmark_ffffff.svg"
-                                alt=""></a>
+                        <a href="#"><img src="https://static.swappa.com/static/images/logos/swappa_wordmark_ffffff.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="social-link last_main_f">
@@ -1672,20 +1563,29 @@
     </footer>
 
     <script>
-    $(window).on("load", function() {
-        $("body").addClass("loaded");
-    });
+        $(window).on("load", function() {
+            $("body").addClass("loaded");
+        });
 
-    var username = sessionStorage.getItem('username');
+        $(document).ready(function() {
+            setTimeout(() => {
+                Swal.fire({
+                    title: `<h3 class="text-danger">Ứng dụng đang phát triển bạn sẽ được chuyển đến trang quản trị</h3>`,
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes',
+                }).then((result) => {
 
-    setTimeout(() => {
-        Swal.fire({
-            title: "Ứng dụng Đang trong quá trình phát triển bạn sẽ được chuyển hướng đến phần đăng nhập của người phát triển",
-            icon: "warning"
-        }).then(() => {
-            window.location.href = "/admin-login";
+                    if (result.isConfirmed) {
+                        window.location.href = "/admin-login";
+                    } else {
+
+                    }
+                })
+            }, 6000)
         })
-    }, 5000)
     </script>
 </body>
 
