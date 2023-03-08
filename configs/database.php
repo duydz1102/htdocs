@@ -1,7 +1,7 @@
 <?php
-define("SERVER_NAME", "127.0.0.1");
-define("DATABASE_NAME", 'asm_php_vtca');
-define("USER_NAME", 'root');
-define("PASS_WORD", '');
+define("SERVER_NAME", "sql113.epizy.com");
+define("DATABASE_NAME", 'epiz_33741735_addd');
+define("USER_NAME", 'epiz_33741735');
+define("PASS_WORD", 'U6odUe3bdV6ak');
 define("PORT", '3306');
 ?>
