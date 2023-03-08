@@ -17,7 +17,7 @@ class Product extends Controller {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $code = $_POST["code"];
             $name = $_POST["name"];
-            $img_path = '\\public\\img\\product\\'.(new DateTime())->getTimestamp().'.png';
+            $img_path = '/public/img/product/'.(new DateTime())->getTimestamp().'.png';
             $target = _DIR_ROOT.$img_path;
             $cate = $_POST["cate"];
             $price = $_POST["price"];                        
