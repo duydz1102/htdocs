@@ -6,6 +6,9 @@ class Home extends Controller
 
     public function index()
     {
+        if(isset($_SESSION["user"])) {
+            header('Location: ' . _WEB_ROOT . '/dang-nhap');
+        }
         return $this->Views("Product/index");
     }
     

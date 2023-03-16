@@ -33,7 +33,7 @@ function Edit(id) {
     $('#editProduct').modal("show");
     console.log(data);
     $("#edit_id").val(data[0]);
-    $("#edit_code").val(data[1]);
+    $("#product_author").val(data[1]);
     $("#edit_name").val(data[2]);
     $("#img_path").val(data[3]);
     $("#edit_cate").val(data[4]);

@@ -2,7 +2,7 @@
     <div class="table-title m-1">
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <div class="col-sm-6">
-                <h2>Quản lý<b> Sản phẩm</b></h2>
+                <h2>Quản lý<b> Sản sách</b></h2>
             </div>
             <button type="button" class="btn  btn-success" data-bs-toggle="modal" data-bs-target="#addProduct">Thêm sản
                 phẩm</button>
@@ -11,10 +11,10 @@
     <table class="table table-striped table-hover" id="tblProduct">
         <thead>
             <tr>
-                <th class="col">Mã sản phẩm</th>
-                <th class="col">Tên sản phẩm</th>
+                <th class="col">Tên tác giả</th>
+                <th class="col">Tên sách</th>
                 <th class="col">Ảnh đại diện</th>
-                <th class="col">Loại sản phẩm</th>
+                <th class="col">Loại sách</th>
                 <th class="col">Giá</th>
                 <th class="col"></th>
             </tr>
@@ -23,7 +23,7 @@
             <?php
             foreach ($data['list'] as $item) {
                 echo '<tr>						
-						<td>' . $item->product_code . '</td>
+						<td>' . $item->product_author . '</td>
 						<td>' . $item->product_name . '</td>
 						<td> <img src="'. $item->img_path.'" style="width: 35px; height:35px;"/></td>
 						<td>' . $item->product_category . '</td>
@@ -43,23 +43,23 @@
 <div class="modal fade" id="addProduct" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" enctype="multipart/form-data" action="<?php echo _WEB_ROOT . '/admin-create' ?>">
+            <form method="post" enctype="multipart/form-data" action="<?php echo '/admin-create' ?>">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm sản phẩm</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm sách</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
                     <div class="mb-3">
-                        <label class="form-label">Mã sản phẩm</label>
+                        <label class="form-label">Tên tác giả</label>
                         <input name="code" type="text" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Tên sản phẩm</label>
+                        <label class="form-label">Tên sách</label>
                         <input name="name" type="text" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Loại sản phẩm</label>
+                        <label class="form-label">Loại sách</label>
                         <input name="cate" type="text" class="form-control" required>
                     </div>
                     <div class="mb-3">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn btn-primary">Lưu sản phẩm mới</button>
+                    <button type="submit" class="btn btn-primary">Lưu sách mới</button>
                 </div>
             </form>
         </div>
@@ -85,23 +85,23 @@
 <div class="modal fade" id="editProduct">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" enctype="multipart/form-data" action="<?php echo _WEB_ROOT . '/admin/Product/Edit' ?>">
+            <form method="post" enctype="multipart/form-data" action="<?php echo '/admin/Product/Edit' ?>">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sửa thông tin sản phẩm</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sửa thông tin sách</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="edit_id" name="id" value="">
                     <div class="mb-3">
-                        <label class="form-label">Mã sản phẩm</label>
+                        <label class="form-label">Tên tác giả</label>
                         <input id="edit_code" name="code" type="text" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Tên sản phẩm</label>
+                        <label class="form-label">Tên sách</label>
                         <input id="edit_name" name="name" type="text" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Loại sản phẩm</label>
+                        <label class="form-label">Loại sách</label>
                         <input id="edit_cate" name="cate" type="text" class="form-control" required>
                     </div>
                     <div class="mb-3">
@@ -116,7 +116,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn btn-primary">Lưu sản phẩm</button>
+                    <button type="submit" class="btn btn-primary">Lưu sách</button>
                 </div>
             </form>
         </div>

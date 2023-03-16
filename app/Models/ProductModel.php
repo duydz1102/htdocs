@@ -12,7 +12,7 @@ class ProductModel extends Model {
         foreach($stmt->fetchAll() as $row) {
             array_push($list, (object)[
                 'id' => $row['id'],
-                'product_code' => $row['product_code'],
+                'product_author' => $row['product_author'],
                 'product_name' => $row['product_name'],
                 'img_path' => $row['img_path'],
                 'product_category' => $row['Category'],
@@ -24,13 +24,13 @@ class ProductModel extends Model {
     }
 
     public function Create($code, $name, $img_path, $price, $cate) {
-        $stmt = $this->connection->prepare('INSERT INTO product (id, product_code, product_name, img_path, price, Category, canceled) VALUES (NULL, ?, ?,?,?, ?, "0");');  
+        $stmt = $this->connection->prepare('INSERT INTO product (id, product_author, product_name, img_path, price, Category, canceled) VALUES (NULL, ?, ?,?,?, ?, "0");');
         $stmt->execute([$code, $name, $img_path, $price, $cate]);
         
     }
 
     public function Edit($code, $name, $price, $cate, $id) {
-        $stmt = $this->connection->prepare('UPDATE product SET product_code = ?, product_name = ?, price = ?, Category = ? WHERE id = ?;');
+        $stmt = $this->connection->prepare('UPDATE product SET product_author = ?, product_name = ?, price = ?, Category = ? WHERE id = ?;');
         $stmt->execute([$code, $name, $price, $cate, $id]);
     }
 
@@ -43,7 +43,7 @@ class ProductModel extends Model {
         $stmt =  $this->connection->prepare("SELECT * FROM `product` WHERE canceled = false AND id = ?;");
         $stmt->execute([$id]);
         $result = $stmt->fetch();
-        return [$result['id'], $result['product_code'],$result['product_name'],$result['img_path'],$result['Category'],$result['price'],];
+        return [$result['id'], $result['product_author'],$result['product_name'],$result['img_path'],$result['Category'],$result['price'],];
     }
     public function GetById2($id) {
         $stmt =  $this->connection->prepare("SELECT * FROM `product` WHERE   id = ?;");
