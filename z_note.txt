@@ -1,2 +1,2 @@
-link web: asmphpvtca.epizy.com
+link web: asmphpvtca.epizy.coma
 tài khoản ftp: epiz_33788301, rQ01PtyYxCqB, ftpupload.net
