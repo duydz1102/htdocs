@@ -17,20 +17,20 @@ class Auth extends Controller
             try {
                 $data = $this->modelUser->GetUser(trim($username), trim(md5($password)));                    
                 if (isset($data[0])) {
-                    $_SESSION["username"] = $username;                   
-
+                    $_SESSION["username"] = $username;
                     header('Location: ' . _WEB_ROOT . '/trang-chu');
+                    //return $this->Views("Product/index", ['username'=>$username]);
                 } else {
                     session_destroy();                    
-                    return $this->Views("Share/Blank", ['subview' => 'Auth/Login', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
+                    return $this->Views("Share/Blank", ['subview' => 'Auth/LogIn', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
                 }
             } catch (Exception $ex) {
                 session_destroy();
-                return $this->Views("Share/Blank", ['subview' => 'Auth/Login', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
+                return $this->Views("Share/Blank", ['subview' => 'Auth/LogIn', 'error'=> true, 'user'=> $username, 'pass'=> $password]);
             }
         }
 
-        return $this->Views("Share/Blank", ['subview' => 'Auth/Login']);
+        return $this->Views("Share/Blank", ['subview' => 'Auth/LogIn']);
     }
 
     public function LogOut()

@@ -4,6 +4,7 @@ $routes['trang-chu'] = "Home/index";
 $routes['dang-nhap'] = "Auth/Login";
 $routes['dang-xuat'] = "Auth/LogOut";
 $routes['dang-ky'] = "Auth/Signin";
+$routes['SachCuaToi'] = "Home/Product_card";
 
 
 $routes['admin-login'] = "/admin/Auth/Login";

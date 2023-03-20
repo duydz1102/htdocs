@@ -31,20 +31,35 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-warning" href="">Trang chủ</a>
+                        <a class="nav-link text-warning" href="/">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="">Sách của tôi</a>
+                        <a class="nav-link text-warning" href="/SachCuaToi">Sách của tôi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="">Tài khoản</a>
+                        <?php
+                        if (!isset($_SESSION['username'])) {
+                            echo '<a class="nav-link text-warning" href="/dang-nhap">Tài khoản</a>';
+                        }
+                        else {
+                            echo '<div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            ' . $_SESSION['username'] . '
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a class="dropdown-item nav-link text-warning" href="/dang-xuat">Đăng Xuất</a></li>
+        </ul>
+    </div>';
+                        }
+                        ?>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="m-5">
+    <header class="m-5 mt-5">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,6 +97,23 @@
         </div>
     </header>
 
+
+    <div class="container px-4">
+        <div class="row gx-5">
+            <?php
+            foreach ($data['listBook'] as $item) {
+                echo '<div class="col mt-5"><div class="card" style="width: 18rem;">
+                    <img src="'. $item->img_path.'" class="card-img-top">
+                    <div class="card-body">
+                     <h5 class="card-title">' . $item->product_author . '</h5>
+                        <p class="card-text">' . $item->product_author . '</p>
+                    </div>
+                </div></div>';
+            }
+            ?>
+
+        </div>
+    </div>
 
     <script>
         $(window).on("load", function() {

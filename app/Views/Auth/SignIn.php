@@ -96,7 +96,6 @@
       }
     })
     reload();
-
   })
 
 
@@ -109,4 +108,5 @@
       $('#send').prop('disabled', true);
     }
   }
+
 </Script>

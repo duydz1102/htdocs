@@ -10,14 +10,14 @@ class ProductModel extends Model {
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
         
         foreach($stmt->fetchAll() as $row) {
-            array_push($list, (object)[
+            $list[] = (object)[
                 'id' => $row['id'],
                 'product_author' => $row['product_author'],
                 'product_name' => $row['product_name'],
                 'img_path' => $row['img_path'],
                 'product_category' => $row['Category'],
                 'product_price' => $row['price'],
-            ]);
+            ];
         }
         $list = array_reverse($list, true);
         return $list;
